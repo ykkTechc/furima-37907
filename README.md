@@ -1,24 +1,77 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# テーブル設計
 
-Things you may want to cover:
+## users テーブル
 
-* Ruby version
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| email              | string | null: false |
+|                    |        | ユニーク制約  |
+| encrypted_password | string | null: false |
+| name               | string | null: false |
+| birthday           | string | null: false |
 
-* System dependencies
+### Association
 
-* Configuration
+- has_many   :prototypes
+- has_many   :user
+- belongs_to :sends
+- belongs_to :orders
 
-* Database creation
+## items テーブル
 
-* Database initialization
+| Column             | Type       | Options     |
+| ------------------ | ---------- | ----------- |
+| title              | text       | null: false |
+| text               | text       | null: false |
+| category           | string     | null: false |
+| status             | string     | null: false |
+| load               | string     | null: false |
+| place              | string     | null: false |
+| day                | string     | null: false |
+| user               | references | null: false |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- has_many   :comments
+- belongs_to :user
 
-* Deployment instructions
+## nomments テーブル
 
-* ...
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| content            | text   | null: false |
+
+### Association
+
+- belongs_to :users
+- belongs_to :items
+
+## sends テーブル
+
+| Column             | Type       | Options     |
+| ------------------ | ---------- | ----------- |
+| post               | text       | null: false |
+| prefecture         | text       | null: false |
+| town               | string     | null: false |
+| address            | string     | null: false |
+| building           | string     | null: false |
+| tele_number        | string     | null: false |
+| user               | references | null: false |
+
+### Association 
+- has_one :user
+- has_one :order
+
+## orders テーブル
+
+| Column             | Type       | Options     |
+| ------------------ | ---------- | ----------- |
+| title              | text       | null: false |
+| price              | string     | null: false |
+| user               | references | null: false |
+
+### Association 
+- has_one    :user
+- belongs_to :sends
