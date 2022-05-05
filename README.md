@@ -4,18 +4,20 @@
 
 ## users テーブル
 
-| Column             | Type   | Options     |
-| ------------------ | ------ | ----------- |
-| email              | string | null: false |
-|                    |        | unipue: true|
-| encrypted_password | string | null: false |
-| nickname           | string | null: false |
-| lastname           | string | null: false |
-| name               | string | null: false |
-| birthday           | string | null: false |
+| Column             | Type   | Options                  |
+| ------------------ | ------ | ------------------------ |
+| email              | string | null: false, unipue: true|
+| encrypted_password | string | null: false              |
+| nickname           | string | null: false              |
+| lastname           | string | null: false              |
+| sub_lastname       | string | null: false              |
+| name               | string | null: false              |
+| sub_name           | string | null: false              |
+| birthday           | date   | null: false              |
 
 ### Association
 
+- has_many   :comments
 - has_many   :items
 - has_many   :orders
 
@@ -25,18 +27,19 @@
 | ------------------ | ---------- | ----------------------------- |
 | title              | string     | null: false                   |
 | explan             | text       | null: false                   |
-| category           | string     | null: false                   |
-| status             | string     | null: false                   |
-| load               | string     | null: false                   |
-| place              | string     | null: false                   |
-| day                | string     | null: false                   |
+| category_id        | integer    | null: false                   |
+| status_id          | integer    | null: false                   |
+| load_id            | integer    | null: false                   |
+| prefecture_id      | integer    | null: false                   |
+| send_day_id        | integer    | null: false                   |
+| price              | string     | null: false                   
 | user               | references | null: false,foreign_key: true |
 
 ### Association
 
-- has_many   :comments
 - belongs_to :user
-- belongs_to :order
+- has_one    :order
+- has_many   :comments
 
 ## comments テーブル
 
@@ -49,7 +52,7 @@
 - belongs_to :users
 - belongs_to :items
 
-## sends テーブル
+## delivery テーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
@@ -59,10 +62,9 @@
 | address            | string     | null: false                    |
 | building           | string     |                                |
 | tele_number        | string     | null: false                    |
-| user               | references | null: false, foreign_key: true |
 
 ### Association 
-- has_one :order
+- belongs_to :order
 
 ## orders テーブル
 
@@ -70,10 +72,10 @@
 | ------------------ | ---------- | ------------------------------ |
 | user               | references | null: false, foreign_key: true |
 | item               | references | null: false, foreign_key: true |
-| item               | references |                                |
 
 
 ### Association 
 - belongs_to :user
-- belongs_to :send
-- has_one    :item
+- belongs_to :item
+- has_one    :delivery
+  
