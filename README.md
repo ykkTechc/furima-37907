@@ -29,10 +29,10 @@
 | explanation        | text       | null: false                   |
 | category_id        | integer    | null: false                   |
 | status_id          | integer    | null: false                   |
-| load_id            | integer    | null: false                   |
+| shipping_fee_id    | integer    | null: false                   |
 | prefecture_id      | integer    | null: false                   |
 | send_day_id        | integer    | null: false                   |
-| price              | string     | null: false                   
+| price              | integer    | null: false                   
 | user               | references | null: false,foreign_key: true |
 
 ### Association
@@ -43,9 +43,11 @@
 
 ## comments テーブル
 
-| Column             | Type   | Options     |
-| ------------------ | ------ | ----------- |
-| content            | text   | null: false |
+| Column             | Type       | Options                            |
+| ------------------ | ---------- | -----------------------------------|
+| content            | text       | null: false                        |
+| user               | references | null: false , foreign_key: true|
+| item               | references | null: false , foreign_key: true|
 
 ### Association
 
@@ -62,6 +64,7 @@
 | address            | string     | null: false                    |
 | building           | string     |                                |
 | tele_number        | string     | null: false                    |
+| order              | references | null: false , foreign_key: true|
 
 ### Association 
 - belongs_to :order
@@ -77,5 +80,5 @@
 ### Association 
 - belongs_to :user
 - belongs_to :item
-- has_one    :delivery
+- has_one    :deliveriey
   
