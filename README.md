@@ -6,7 +6,7 @@
 
 | Column             | Type   | Options                  |
 | ------------------ | ------ | ------------------------ |
-| email              | string | null: false, unipue: true|
+| email              | string | null: false, unique: true|
 | encrypted_password | string | null: false              |
 | nickname           | string | null: false              |
 | lastname           | string | null: false              |
@@ -52,12 +52,12 @@
 - belongs_to :user
 - belongs_to :item
 
-## deliverys テーブル
+## deliveries テーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | post               | string     | null: false                    |
-| prefecture         | integer    | null: false                    |
+| prefecture_id      | integer    | null: false                    |
 | town               | string     | null: false                    | 
 | address            | string     | null: false                    |
 | building           | string     |                                |
