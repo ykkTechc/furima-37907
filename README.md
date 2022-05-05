@@ -26,7 +26,7 @@
 | Column             | Type       | Options                       |
 | ------------------ | ---------- | ----------------------------- |
 | title              | string     | null: false                   |
-| explan             | text       | null: false                   |
+| explanation        | text       | null: false                   |
 | category_id        | integer    | null: false                   |
 | status_id          | integer    | null: false                   |
 | load_id            | integer    | null: false                   |
@@ -49,15 +49,15 @@
 
 ### Association
 
-- belongs_to :users
-- belongs_to :items
+- belongs_to :user
+- belongs_to :item
 
-## delivery テーブル
+## deliverys テーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | post               | string     | null: false                    |
-| prefecture         | text       | null: false                    |
+| prefecture         | integer    | null: false                    |
 | town               | string     | null: false                    | 
 | address            | string     | null: false                    |
 | building           | string     |                                |
