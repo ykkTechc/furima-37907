@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="gxfQsTz_CTAeysezG8u0" name="ページ1">
-        <mxGraphModel dx="498" dy="427" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="926" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -65,7 +65,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="40" value="&lt;font color=&quot;#ffffff&quot;&gt;email&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;(string型 NOT NULL)&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;sketch=1;" parent="38" vertex="1">
+                <mxCell id="40" value="&lt;font color=&quot;#ffffff&quot;&gt;email&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;(string型 NOT NULL)&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;&amp;nbsp;　　　　　　　　　unique: true&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;sketch=1;" parent="38" vertex="1">
                     <mxGeometry x="30" width="270" height="30" as="geometry">
                         <mxRectangle width="270" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -206,7 +206,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="141" value="explanation (&lt;font color=&quot;#99ffff&quot;&gt;text&lt;/font&gt;型&amp;nbsp; NOT NULL)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="139" vertex="1">
+                <mxCell id="141" value="explanation_id (&lt;font color=&quot;#99ffff&quot;&gt;text&lt;/font&gt;型&amp;nbsp; NOT NULL)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="139" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -219,7 +219,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="138" value="&lt;font color=&quot;#ffffff&quot;&gt;category&amp;nbsp;&amp;nbsp;(&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOT NULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="136" vertex="1">
+                <mxCell id="138" value="&lt;font color=&quot;#ffffff&quot;&gt;category_id&amp;nbsp; (&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="136" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -232,7 +232,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="135" value="&lt;font color=&quot;#ffffff&quot;&gt;status&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;(&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOT NULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="133" vertex="1">
+                <mxCell id="135" value="&lt;font color=&quot;#ffffff&quot;&gt;status_id&amp;nbsp; &amp;nbsp; &amp;nbsp;(&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOT NULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="133" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -245,7 +245,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="132" value="&lt;font color=&quot;#ffffff&quot;&gt;sgipping_fee(&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="130" vertex="1">
+                <mxCell id="132" value="&lt;font color=&quot;#ffffff&quot;&gt;sgipping_fee_id(&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="130" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -258,7 +258,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="125" value="&lt;font color=&quot;#ffffff&quot;&gt;prefecture&amp;nbsp; (&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOT NULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="123" vertex="1">
+                <mxCell id="125" value="&lt;font color=&quot;#ffffff&quot;&gt;prefecture_id(&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="123" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -271,7 +271,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="122" value="&lt;font color=&quot;#ffffff&quot;&gt;send_day (&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型 NOT NULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="120" vertex="1">
+                <mxCell id="122" value="&lt;font color=&quot;#ffffff&quot;&gt;send_day_id (&lt;/font&gt;&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;型NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="120" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -284,7 +284,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="236" value="price&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;(&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span&gt;型NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" vertex="1" parent="234">
+                <mxCell id="236" value="price_id&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; (&lt;span style=&quot;background-color: rgb(30 , 30 , 30) ; color: rgb(212 , 212 , 212) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace&quot;&gt;integer&lt;/span&gt;&lt;span&gt;型NOTNULL)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" vertex="1" parent="234">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -297,7 +297,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="66" value="&lt;span&gt;user&amp;nbsp; &amp;nbsp; &amp;nbsp;references型,&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;NOT NULL&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;,外部キー&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="64" vertex="1">
+                <mxCell id="66" value="&lt;span&gt;user&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; references型,&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;NOT NULL&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;,外部キー&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="64" vertex="1">
                     <mxGeometry x="30" width="210" height="30" as="geometry">
                         <mxRectangle width="210" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -368,7 +368,7 @@
                         <mxRectangle width="30" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="165" value="prefecture&amp;nbsp; &amp;nbsp; (integer型 NOT NULL)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="163" vertex="1">
+                <mxCell id="165" value="prefecture_id&amp;nbsp; &amp;nbsp; (integer型 NOT NULL)" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;pointerEvents=1;" parent="163" vertex="1">
                     <mxGeometry x="30" width="270" height="30" as="geometry">
                         <mxRectangle width="270" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -522,8 +522,8 @@
                 </mxCell>
                 <mxCell id="200" value="" style="endArrow=none;html=1;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="504" y="575" as="sourcePoint"/>
-                        <mxPoint x="504" y="545" as="targetPoint"/>
+                        <mxPoint x="485" y="557" as="sourcePoint"/>
+                        <mxPoint x="519" y="537" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="203" value="" style="endArrow=none;html=1;" parent="1" edge="1">
@@ -554,6 +554,18 @@
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="620" y="508" as="sourcePoint"/>
                         <mxPoint x="660" y="508" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="247" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="619.9999999999998" y="472" as="sourcePoint"/>
+                        <mxPoint x="659.9999999999998" y="472" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="248" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="518" y="575" as="sourcePoint"/>
+                        <mxPoint x="484" y="560" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
