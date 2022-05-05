@@ -7,37 +7,38 @@
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
 | email              | string | null: false |
-|                    |        | ユニーク制約  |
+|                    |        | unipue: true|
 | encrypted_password | string | null: false |
+| nickname           | string | null: false |
+| lastname           | string | null: false |
 | name               | string | null: false |
 | birthday           | string | null: false |
 
 ### Association
 
-- has_many   :prototypes
-- has_many   :user
-- belongs_to :sends
-- belongs_to :orders
+- has_many   :items
+- has_many   :orders
 
 ## items テーブル
 
-| Column             | Type       | Options     |
-| ------------------ | ---------- | ----------- |
-| title              | text       | null: false |
-| text               | text       | null: false |
-| category           | string     | null: false |
-| status             | string     | null: false |
-| load               | string     | null: false |
-| place              | string     | null: false |
-| day                | string     | null: false |
-| user               | references | null: false |
+| Column             | Type       | Options                       |
+| ------------------ | ---------- | ----------------------------- |
+| title              | string     | null: false                   |
+| explan             | text       | null: false                   |
+| category           | string     | null: false                   |
+| status             | string     | null: false                   |
+| load               | string     | null: false                   |
+| place              | string     | null: false                   |
+| day                | string     | null: false                   |
+| user               | references | null: false,foreign_key: true |
 
 ### Association
 
 - has_many   :comments
 - belongs_to :user
+- belongs_to :order
 
-## nomments テーブル
+## comments テーブル
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
@@ -50,28 +51,29 @@
 
 ## sends テーブル
 
-| Column             | Type       | Options     |
-| ------------------ | ---------- | ----------- |
-| post               | text       | null: false |
-| prefecture         | text       | null: false |
-| town               | string     | null: false |
-| address            | string     | null: false |
-| building           | string     | null: false |
-| tele_number        | string     | null: false |
-| user               | references | null: false |
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| post               | string     | null: false                    |
+| prefecture         | text       | null: false                    |
+| town               | string     | null: false                    | 
+| address            | string     | null: false                    |
+| building           | string     |                                |
+| tele_number        | string     | null: false                    |
+| user               | references | null: false, foreign_key: true |
 
 ### Association 
-- has_one :user
 - has_one :order
 
 ## orders テーブル
 
-| Column             | Type       | Options     |
-| ------------------ | ---------- | ----------- |
-| title              | text       | null: false |
-| price              | string     | null: false |
-| user               | references | null: false |
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user               | references | null: false, foreign_key: true |
+| item               | references | null: false, foreign_key: true |
+| item               | references |                                |
+
 
 ### Association 
-- has_one    :user
-- belongs_to :sends
+- belongs_to :user
+- belongs_to :send
+- has_one    :item
