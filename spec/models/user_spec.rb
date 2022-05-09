@@ -96,7 +96,7 @@ RSpec.describe User, type: :model do
       @user.valid?
       expect(@user.errors.full_messages).to include("Password is invalid. Input full-width katakana characters.")
     end
-    it 'passwordが大文字のみでは登録出来ない' do
+    it 'passwordが全角文字を含むと登録出来ない' do
       @user.password = 'A B C１２３'
       @user.password_confirmation = 'A B C１２３'
       @user.valid?
