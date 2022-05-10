@@ -1,13 +1,18 @@
-# FactoryBot.define do
-#   factory :item do
-#     image            {}
-#     title            {'テスト'}
-#     explanation      {'ホゲフガ'}
-#     category_id      {'Category_id.all.sample'}
-#     status_id        {'Status_id.all.sample'}
-#     shipping_fee_id  {'ShippingFee_id.all.sample'}
-#     prefecture_id    {'Prerecture_id.all.sample'}
-#     send_day_id      {'SendDay_id.all.sample'}
-#     price            {'price'}
-#   end
-# end
+FactoryBot.define do
+  factory :item do
+    title            {'テスト'}
+    explanation      {'商品の説明'}
+    category_id      {2}
+    status_id        {2}
+    shipping_fee_id  {2}
+    prefecture_id    {2}
+    send_day_id      {2}
+    price            {'1000'}
+
+    after(:build) do |item|
+      item.image.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+    end
+
+    association :user
+  end
+end

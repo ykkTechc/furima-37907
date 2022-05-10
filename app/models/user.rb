@@ -10,5 +10,7 @@ class User < ApplicationRecord
          validates :name,           presence: true,format: {with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/, message: "is invalid. Input full-width characters."} 
          validates :sub_name,       presence: true,format: {with: /\A[ァ-ヶー]+\z/,           message: "is invalid. Input full-width katakana characters."}
          validates :birthday,       presence: true
-         validates :password,                       format: {with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze, message: "is invalid. Input full-width katakana characters."}
+         validates :password,                      format: {with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze, message: "is invalid. Input full-width katakana characters."}
+
+         has_many :items
 end

@@ -6,11 +6,13 @@ RSpec.describe User, type: :model do
     @user = FactoryBot.build(:user)
   end
 
-  it 'すべての情報があれば保存できる' do
-    expect(@user).to be_valid
-  end
+  describe '商品出品機能の実装' do
+    context '商品出品ができる場合' do
+     it 'すべての情報があれば保存できる' do
+       expect(@user).to be_valid
+     end
+    end
 
-  describe 'ユーザー新規登録' do
     it 'nicknameが空では登録できない' do
       @user.nickname = ''  
       @user.valid?
@@ -108,5 +110,6 @@ RSpec.describe User, type: :model do
       @user.valid?
       expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
     end
+  end
   end
 end
