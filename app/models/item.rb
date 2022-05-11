@@ -9,7 +9,7 @@ class Item < ApplicationRecord
   
   has_one_attached :image
  
-  validates :price,           presence: true
+  validates :price,           presence: true, inclusion: { in: 300..9_999_999 }, format: { with: /\A[0-9]+\z/ }
   validates :image,           presence: true
   validates :title,           presence: true
   validates :explanation,     presence: true
