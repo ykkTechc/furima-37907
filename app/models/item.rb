@@ -1,17 +1,23 @@
 class Item < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  # belongs_to :category
-  # belongs_to :prefecture
-  # belongs_to :send_day
-  # belongs_to :sipping_fee
-  # belongs_to :status
+  belongs_to :category
+  belongs_to :prefecture
+  belongs_to :send_day
+  belongs_to :shipping_fee
+  belongs_to :status
+  belongs_to :user
+  
+  has_one_attached :image
+ 
+  validates :price,           numericality: { only_integer: true }, inclusion: { in: 300..9_999_999 }
+  validates :image,           presence: true
+  validates :title,           presence: true
+  validates :explanation,     presence: true
+  validates :category_id,     numericality: { other_than: 1 , message: "can't be blank"} 
+  validates :prefecture_id,   numericality: { other_than: 1 , message: "can't be blank"}
+  validates :send_day_id,     numericality: { other_than: 1 , message: "can't be blank"}
+  validates :shipping_fee_id, numericality: { other_than: 1 , message: "can't be blank"}
+  validates :status_id,       numericality: { other_than: 1 , message: "can't be blank"}
 
-  # has_one_attached :image
-
-
-  # validates :category,    numericality: { other_than: 1 , message: "can't be blank"} 
-  # validates :prefecture,  numericality: { other_than: 1 , message: "can't be blank"}
-  # validates :send_day,    numericality: { other_than: 1 , message: "can't be blank"}
-  # validates :sipping_fee, numericality: { other_than: 1 , message: "can't be blank"}
-  # validates :status,      numericality: { other_than: 1 , message: "can't be blank"}
+  # default_scope -> { order(created_at: :desc) }
 end
