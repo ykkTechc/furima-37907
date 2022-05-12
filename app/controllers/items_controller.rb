@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
 
   
   def index
-    # @items = Item.includes(:user, :item)
+    # @items = Item.includes(:user)
   end
   
   def new
