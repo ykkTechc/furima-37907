@@ -3,10 +3,10 @@ class OrderDelivery
   attr_accessor :post, :town, :address, :building, :tele_number, :prefecture_id, :user_id, :item_id, :token
 
   with_options presence: true do
-     validates :post           
-     validates :town           
+     validates :post          , format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)"}
+     validates :town          
      validates :address       
-     validates :tele_number   
+     validates :tele_number   ,format: {with:/\A\d[0-9]{10,11}\z/, message: "can't be blank"}
      validates :token
   end
      validates :prefecture_id , numericality: { other_than: 1 , message: "can't be blank"}
