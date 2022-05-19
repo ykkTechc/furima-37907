@@ -35,6 +35,11 @@ RSpec.describe OrderDelivery, type: :model do
         @order_delivery.valid?
         expect(@order_delivery.errors.full_messages).to include("Prefecture can't be blank")
       end
+      it '都道府県に「---」が表示されている場合が購入出来ない' do
+        @order_delivery.prefecture_id = '---'
+        @order_delivery.valid?
+        expect(@order_delivery.errors.full_messages).to include("Prefecture can't be blank")
+      end
       it '市町村を選択していないと購入できないこと' do
         @order_delivery.town = ''
         @order_delivery.valid?
