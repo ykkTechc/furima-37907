@@ -52,7 +52,7 @@ class ItemsController < ApplicationController
  end
 
  def move_to_index
-   redirect_to root_path unless current_user == @item.user # 出品者でなければリダイレクト
+   redirect_to root_path unless current_user == @item.user 
  end
  
  def set_edit
