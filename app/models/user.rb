@@ -13,4 +13,5 @@ class User < ApplicationRecord
          validates :password,                      format: {with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze, message: "is invalid. Input full-width katakana characters."}
 
          has_many :items
+         has_many :orders
 end

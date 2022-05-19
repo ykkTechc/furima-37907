@@ -8,6 +8,8 @@ class Item < ApplicationRecord
   belongs_to :user
   
   has_one_attached :image
+  has_one :order
+  
  
   validates :price,           numericality: { only_integer: true }, inclusion: { in: 300..9_999_999 }
   validates :image,           presence: true
